@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary Text */
+  --VeryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+  --SoftRed: hsl(14, 88%, 65%);
+
+  /* Gradient */
+  --SoftViolet: hsl(273, 75%, 66%);
+  --SoftBlue: hsl(240, 73%, 65%);
+
+  /* Neutral Text */
+  --VeryDarkGrayishBlue: hsl(237, 12%, 33%);
+  --DarkGrayishBlue: hsl(240, 6%, 50%);
+
+  /* Dividers */
+  --LightGrayishBlue: hsl(240, 5%, 91%);
+}
+
+body {
+  font-size: 12px;
+  font-family: "Kumbh Sans";
+
+  min-height: 100vh;
+  min-width: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: linear-gradient(to bottom, var(--SoftViolet), var(--SoftBlue));
+  background-repeat: no-repeat;
+}
+
+.container {
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  width: 900px;
+  height: 500px;
+  margin: auto;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+}
+
+.illustration {
+  width: 450px;
+  height: 500px;
+
+  background-image: url(./images/illustration-woman-online-desktop.svg),
+    url(./images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: -70px, -565px;
+  background-position-y: 100px, -267px;
+
+  display: flex;
+}
+
+.illustration-box-desktop {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin-top: 220px;
+  margin-left: -96px;
+}
+
+.faq {
+  width: 450px;
+  height: 500px;
+  padding: 30px;
+}
+
+.faq > h1 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.accordian_item {
+  border-bottom: 1px solid #e7e7e9;
+  padding: 1.3rem 0 0 0;
+}
+
+.accordian_btn {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.accordian_btn:hover {
+  color: var(--SoftViolet);
+}
+
+.accordian_btn::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 0.25rem;
+  width: 0.65rem;
+  height: 1rem;
+  background-image: url(/images/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.accordian_panel {
+  display: none;
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+
+.active > .accordian_btn {
+  font-weight: 700;
+}
+
+.active > .accordian_btn::after {
+  top: -0.43rem;
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+.active > .accordian_panel {
+  display: block;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  .container {
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
+
+    display: flex;
+  }
+}
