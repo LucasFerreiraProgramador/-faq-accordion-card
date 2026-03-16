@@ -1,15 +1,18 @@
-# FAQ Accordion Card ❓
+# FAQ Accordion Card
 
-Projeto de prática pessoal desenvolvido por **Lucas Ferreira Silva**,
-estudante de **Análise e Desenvolvimento de Sistemas**.
+Um componente de FAQ interativo desenvolvido com foco em manipulação de DOM, controle de estado e experiência do usuário.  
+O projeto apresenta perguntas e respostas em formato accordion, permitindo expandir e recolher conteúdos de forma dinâmica.
+
+🔗 Acesse o projeto:  
+https://lucasferreiraprogramador.github.io/-faq-accordion-card/
 
 ---
 
-## 🚀 Tecnologias
-Esse projeto foi desenvolvido com:
-- HTML
-- CSS
-- JavaScript
+## Tecnologias Utilizadas
+
+- HTML5 — estrutura semântica  
+- CSS3 — layout, responsividade e estilos  
+- JavaScript (Vanilla) — lógica e interações  
 
 ---
 
@@ -21,5 +24,10 @@ Projeto criado exclusivamente para fins de estudo e portfólio.
 
 ---
 
-## 📝 Licença
-Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais informações.
+## 👤 Autor
+- [Lucas Ferreira](https://lucas.ferreiradev.com/)
+- [GitHub](https://github.com/LucasFerreiraProgramador)
+- [LinkedIn](https://www.linkedin.com/in/lucasferreira-dev-front-end/)
+
+## 📄 Licença
+Este projeto foi desenvolvido para fins de estudo e prática de desenvolvimento Front-End.
